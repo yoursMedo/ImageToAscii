@@ -36,12 +36,14 @@ def pixel_to_ascii(image: Image):
     return ascii_str
 
 
-
+#  Using the function.
 ascii_str = pixel_to_ascii(resized_screen)
 
+#  Takes care of New Line.
 ascii_str_len = len(ascii_str)
 ascii_img = "\n".join([ascii_str[i:(i + new_width)] for i in range(0, ascii_str_len, new_width)])
 
+#  Output :p
 print(ascii_img)
 
 
